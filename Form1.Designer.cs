@@ -49,6 +49,7 @@
             button19 = new Button();
             button20 = new Button();
             textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -79,6 +80,7 @@
             button3.TabIndex = 2;
             button3.Text = "5";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -98,6 +100,7 @@
             button5.TabIndex = 4;
             button5.Text = "9";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -107,7 +110,7 @@
             button6.TabIndex = 5;
             button6.Text = "/";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            button6.Click += operador_Click;
             // 
             // button7
             // 
@@ -117,6 +120,7 @@
             button7.TabIndex = 6;
             button7.Text = "3";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -136,6 +140,7 @@
             button9.TabIndex = 8;
             button9.Text = "8";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -145,6 +150,7 @@
             button10.TabIndex = 9;
             button10.Text = "1";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -164,6 +170,7 @@
             button12.TabIndex = 11;
             button12.Text = ".";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -180,8 +187,9 @@
             button14.Name = "button14";
             button14.Size = new Size(75, 23);
             button14.TabIndex = 13;
-            button14.Text = "X";
+            button14.Text = "*";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += operador_Click;
             // 
             // button15
             // 
@@ -191,6 +199,7 @@
             button15.TabIndex = 14;
             button15.Text = "-";
             button15.UseVisualStyleBackColor = true;
+            button15.Click += operador_Click;
             // 
             // button16
             // 
@@ -200,6 +209,7 @@
             button16.TabIndex = 15;
             button16.Text = "+";
             button16.UseVisualStyleBackColor = true;
+            button16.Click += operador_Click;
             // 
             // button17
             // 
@@ -218,6 +228,7 @@
             button18.TabIndex = 17;
             button18.Text = "%";
             button18.UseVisualStyleBackColor = true;
+            button18.Click += operador_Click;
             // 
             // button19
             // 
@@ -227,6 +238,7 @@
             button19.TabIndex = 18;
             button19.Text = ")";
             button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
             // 
             // button20
             // 
@@ -246,11 +258,21 @@
             textBox1.TabIndex = 20;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(436, 86);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 21;
+            label1.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(625, 450);
+            Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(button20);
             Controls.Add(button19);
@@ -302,5 +324,6 @@
         private Button button19;
         private Button button20;
         private TextBox textBox1;
+        private Label label1;
     }
 }
